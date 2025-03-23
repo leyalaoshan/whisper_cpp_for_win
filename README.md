@@ -2,8 +2,6 @@
 whisper.cpp for windows
 
 
-以下是你的內容轉換為 Markdown 格式：
-
 # Windows 11 安裝 Whisper.cpp 使用我的腳本製作 SRT YouTube 字幕
 
 ## 1. 安裝 Choco
