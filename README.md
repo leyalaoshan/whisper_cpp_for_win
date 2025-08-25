@@ -15,7 +15,7 @@ Set-ExecutionPolicy Bypass -Scope CurrentUser -Force; [System.Net.ServicePointMa
 
 ⸻
 
-2. 安裝 CMake
+## 2. 安裝 CMake
 
 choco install cmake
 
@@ -23,7 +23,7 @@ choco install cmake
 
 ⸻
 
-3. 安裝 Git
+## 3. 安裝 Git
 
 choco install git -y
 
@@ -31,7 +31,7 @@ choco install git -y
 
 ⸻
 
-4. 安裝 Visual Studio Code
+## 4. 安裝 Visual Studio Code
 
 可選擇安裝：
 
@@ -41,7 +41,7 @@ choco install vscode
 
 ⸻
 
-5. 安裝 Visual Studio 2022
+## 5. 安裝 Visual Studio 2022
 
 choco install visualstudio2022community --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended"
 
@@ -53,13 +53,13 @@ choco install visualstudio2022community --package-parameters "--add Microsoft.Vi
 
 ⸻
 
-6. 安裝 CUDA
+## 6. 安裝 CUDA
 
 從 官網 下載並安裝。
 
 ⸻
 
-7. 安裝 Miniconda
+## 7. 安裝 Miniconda
 
 從 官網 下載並安裝。
 安裝完成後執行：
@@ -70,7 +70,7 @@ conda init
 
 ⸻
 
-8. 下載 Whisper.cpp 檔案
+## 8. 下載 Whisper.cpp 檔案
 
 cd D:
 git clone https://github.com/ggerganov/whisper.cpp.git
@@ -80,7 +80,7 @@ cd whisper.cpp
 
 ⸻
 
-9. 下載模型
+## 9. 下載模型
 
 models\download-ggml-model.cmd ggml-large-v3-turbo.bin
 
@@ -88,7 +88,7 @@ models\download-ggml-model.cmd ggml-large-v3-turbo.bin
 
 ⸻
 
-10. 編譯檔案
+## 10. 編譯檔案
 
 cmake -S . -B build -DGGML_CUDA=ON
 cd D:\whisper.cpp\build
@@ -98,7 +98,7 @@ cmake --build . --config Release
 
 ⸻
 
-11. 創建 Conda 虛擬環境
+## 11. 創建 Conda 虛擬環境
 
 conda create --name whisper python=3.9
 conda activate whisper
@@ -112,6 +112,6 @@ choco install ffmpeg
 
 ⸻
 
-12. 執行
+## 12. 執行
 
 python main.py
