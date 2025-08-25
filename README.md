@@ -1,5 +1,5 @@
 # whisper_cpp_for_win
-whisper.cpp for windows
+whisper.cpp for Windows
 
 
 # Windows 11 安裝 Whisper.cpp 使用我的腳本製作 SRT YouTube 字幕
