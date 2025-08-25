@@ -50,7 +50,9 @@ def download_and_convert(url: str) -> None:
             r"D:\whisper.cpp\models\ggml-large-v3-turbo.bin",
             "-l",
             "zh",
-            "-osrt",
+            "-o",
+            "audio",
+            "--output-srt",
             "-f",
             audio_wav,
         ]
